@@ -8,3 +8,8 @@ resource "google_storage_bucket" "tf-bucket" {
     enabled = true
   }
 }
+resource "google_storage_bucket_object" "picture" {
+  name   = "git"
+  source = "github.png"
+  bucket = "image-store"
+}
