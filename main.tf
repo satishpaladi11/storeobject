@@ -11,5 +11,5 @@ resource "google_storage_bucket" "tf-bucket" {
 resource "google_storage_bucket_object" "picture" {
   name   = "git"
   source = "github.png"
-  bucket = "image-store"
+  bucket = "store-bucket85558"
 }
